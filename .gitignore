@@ -1,0 +1,12 @@
+# Development Cache
+.direnv/
+
+# macOS Caching
+.DS_Store
+
+# Python Caching
+*.pyc
+*.pyd
+**/__pycache__
+**/.pytest_cache
+.coverage
