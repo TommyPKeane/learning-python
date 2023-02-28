@@ -7,6 +7,7 @@
     - [`decimal_features.py`](#decimal_featurespy)
     - [`precision_detail.py`](#precision_detailpy)
     - [`precision_simple.py`](#precision_simplepy)
+- [References](#references)
 - [License](#license)
 
 <!-- /MarkdownTOC -->
@@ -98,6 +99,14 @@ Precision 12 | Diff x - y: 0.000592
 
 Precision 2 | Diff x - y: 0.00059
 ```
+
+<a id="references"></a>
+## References
+
+- https://en.wikipedia.org/wiki/Approximations_of_%CF%80
+- https://en.wikipedia.org/wiki/Floating-point_arithmetic
+- https://en.wikipedia.org/wiki/Significand
+- https://en.wikipedia.org/wiki/Rational_number
 
 <a id="license"></a>
 ## License
