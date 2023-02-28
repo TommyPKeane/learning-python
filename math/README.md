@@ -6,6 +6,7 @@
 - [Examples](#examples)
     - [`numbers.py`](#numberspy)
     - [`statistics.py`](#statisticspy)
+- [References](#references)
 - [License](#license)
 
 <!-- /MarkdownTOC -->
@@ -75,6 +76,17 @@ There are 48,228,180 possible 3-tuple permutations (ordered sets) from 365 eleme
 n (33) perm k (34): 0
 There are 0 possible 34-tuple permutations (ordered sets) from 33 elements
 ```
+
+<a id="references"></a>
+## References
+
+- https://en.wikipedia.org/wiki/Twelvefold_way
+- https://en.wikipedia.org/wiki/Combination
+- https://en.wikipedia.org/wiki/Permutation
+- https://en.wikipedia.org/wiki/Floating-point_arithmetic
+- https://en.wikipedia.org/wiki/Significand
+- https://en.wikipedia.org/wiki/Common_logarithm
+- https://en.wikipedia.org/wiki/Common_logarithm#Mantissa_and_characteristic
 
 <a id="license"></a>
 ## License
