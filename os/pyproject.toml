@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "syntax-examples"
+name = "psl-os"
 version = "1.0.0"
 description = "Examples of General Python Syntax (using latest Python)"
 authors = [
