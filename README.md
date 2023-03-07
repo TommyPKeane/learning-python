@@ -1,6 +1,6 @@
 # Learning Python
 
-Tommy teaches Tommy (and anyone who wants to actually read this) how to code in Python.
+__tommy teaches tommy__ (and anyone who wants to actually read this) how to code in Python, with a major focus on all the functionality available in the Python Standard Library (PSL).
 
 I've been doing various amounts of Python coding since 2009-ish in personal, professional, and academic projects, but you're never too old to learn, and they keep making computers better and worse all the time.
 
@@ -8,72 +8,51 @@ Currently in 2023, I'd say that Python is my preferred programming language and 
 
 <!-- MarkdownTOC -->
 
-- [Common Setup](#common-setup)
-  - [Why Not Docker?](#why-not-docker)
+- [Setup](#setup)
+- [What is Python?](#what-is-python)
+- [What's this "tommy teaches tommy" thing all about?](#whats-this-tommy-teaches-tommy-thing-all-about)
 - [License](#license)
 - [References](#references)
 
 <!-- /MarkdownTOC -->
 
-<a id="common-setup"></a>
-## Common Setup
+<a id="setup"></a>
+## Setup
 
-This repo relies on `pyenv` and `direnv` to create directory-local "projects", which establish a fixed, local instance of Python to use as an isolated interpreter (runtime) where we can keep all our dependencies isolated.
+See the [`CONTRIBUTING.md`](./CONTRIBUTING.md) file for the overall setup design and details about this repository, or how to make sure your system is setup with any prerequisites.
 
-The major benefit of this approach is that we avoid the disconnect of Docker, and enforces an encapsulated development environment that can be shared between developers and more easily productionalized _via_ Docker or some other deployment.
+Also note that each self-contained directory will also have a top-level `README.md` file which should explain exactly how to use or run the code contained within.
 
-In macOS you can setup the tools with `brew` using the following commands:
+<a id="what-is-python"></a>
+## What is Python?
 
-- `brew install direnv`
-- `brew install pyenv`
 
-In each project directory there will be four common files:
 
-- `.python-version`: Version of Python (per `pyenv`) in use
-- `.envrc`: `direnv` Configuration File
-- `pyproject.toml`: Project and Package Dependencies Management
-- `poetry.toml`: Poetry Configuration Options
-- `poetry.lock`: Dependency Lock File (hashes etc.)
+<a id="whats-this-tommy-teaches-tommy-thing-all-about"></a>
+## What's this "tommy teaches tommy" thing all about?
 
-As such, you'll note that almost all the `.envrc` configuration files for `direnv` look like this:
+Hi, I'm the tommy; it's me. __tommy teaches tommy__ is just a phrase I like to use to summarize, categorize, collect, and explain my personal style of writing for any kinds of tutorial, referential, or theoretical documentation.
 
-```bash
-# direnv Config File
-#
-# https://direnv.net/
-# https://github.com/pyenv/pyenv
+<details>
+  <summary>More details (ramblings)...</summary>
 
-python_version=$(cat "./.python-version")
+  Outside of the innate narcissism and suspected solipsism, I prefer this phrase as a way to clarify and preface that what I'm sharing and writing is directed at myself as the audience. I'm teaching myself this topic, whether I know it already or not.
 
-layout pyenv "${python_version}"
-```
+  I want to clarify that, because I am preemptively anxiously concerned that my writing-style would otherwise come across as a disrespectful "know it all". I'm really, honestly not trying to be a jerk. But, I sometimes actually do kinda know what I'm talking about ... that's as much as I'll admit.
 
-As a pre-cursor to calling `direnv allow`, you should make sure that you have the appropriate version of Python installed through `pyenv` by calling `pyenv install` in the same directory as the `.python-version` file.
+  I may know a lot or a little, I may be seeing and saying all this for the first time, or I may have spent decades dealing with this topic. Either way, I want to teach (and re-teach) myself by trying to explain it to myself until I hit a level of verifiable detail where I'm like "Yeah, totally. That makes sense. Oh, and neat diagrams! I loves it! Great job, tommy!", or something similar.
 
-The common setup steps for each directory will follow this sequence:
+  And I want that to be a warning to anyone who reads this or references what I'm sharing. I don't say that to mean that I think this is useless, I just want to encourage caution in taking what I say as totally, entirely, fundamentally, perfectly correct. And, even if I'm still figuring it out, or if I got it right, I just honestly hope it's useful to anyone who finds this and reads any of this.
 
-1. `pyenv install` (Optional)
-1. `direnv allow`
-1. `pip install --upgrade pip`
-1. `pip install poetry`
-1. `poetry install`
+  I want to be an advocate for transparency and the sharing of information. In all honesty, I probably have a neurotic compulsion to want to know and learn everything; but I don't want to hoard any information or knowledge. I really think we can all learn everything, and while I'm entertaining myself with all this, I just want to share it openly and transparently.
 
-Arguably, you can install a system-level version of `poetry`, to avoid incremental updates, similar to `direnv` and `pyenv`, but that's really only going to be a consideration in a team-based development environment or in professional software when you need to prioritize stability and repeatability.
+  But, again, that's all with the caveat that maybe I got some of this wrong, maybe I misunderstood, or maybe I've talked myself into a false rationalization that I haven't realized yet.
 
-Another alternative to a system-level version of `poetry` is also to just enforce a version constraint when you install `poetry` by using a command like `pip install poetry==1.2.3`, where `1.2.3` is the version you want to "lock" your Project to.
+  So, this is __tommy teaches tommy__ -- adverb laden, overly confidently written, and ever-evolving reference materials on various topics with solipsistic priorities and varying degrees of quality.
 
-<a id="why-not-docker"></a>
-### Why Not Docker?
+  But please feel free to use any of this for yourself, and you're more than welcome to secretly/silently watch me flail here out in the open, or go ahead and reach out if you have any questions, comments, suggestions, corrections, or whatever. Just please also take it all with a bit of safety-conscious cynicism ("trust but verify") before you use any of the information here to do anything important.
 
-What's with `direnv` and `pyenv`? Do you really need those? Why not just work directly in Docker?
-
-You can, if you want -- you can do anything you want, I'm definitely not in charge 👻.
-
-If you're asking why would I suggest avoiding Docker, I'd say that there's a complexity of system resource management, caching, publishing, and logging that are all complicated by using Docker. These are things that can all be overcome, even if they're innate to a Dockerized deployment, but that's where the effort should be focused on the deployment itself and not necessarily the code/app being deployed.
-
-It's essentially a recommendation for a "separation of duties". If you think about writing a book, you have the content of the book (the text), but then you also have the typography and typesetting/layout of how the book is paginated and ultimately printed. As best as possible, it's beneficial to separate those two things, so that you can just focus on content and then worry about presentation afterwards. Things can go very wrong if you overly "tie" your content to your media/medium, because then it's not a separable and configurable presentation layer, it's then a fundamental assumption/requirement of the content itself.
-
-Obviously, we can't solve everything, so we have to pick and choose our battles. So, in that sense, in my experience, there's a nice happy middle-ground by developing in Python with `direnv`, `pyenv`, and `poetry`, and then using Docker or some other system runtime management tooling to establish the production version.
+  > _"gotcha. i ain't reading all that. i'm happy for you, though. or sorry that that happend."_
 
 <a id="license"></a>
 ## License
