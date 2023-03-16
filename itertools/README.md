@@ -11,13 +11,6 @@
 
 <!-- /MarkdownTOC -->
 
-<style>
-  code {
-    white-space : pre-wrap !important;
-    word-break: break-word;
-  }
-</style>
-
 <a id="setup"></a>
 ## Setup
 
@@ -46,37 +39,88 @@ which should produce the output:
 ```bash
 >> Processing Iterable: HELLO
 
-Full-Length Permutations (Unique Orderings, No Replacement, N=5): ['HELLO', 'HELOL', 'HELLO', 'HELOL', 'HEOLL', 'HEOLL', 'HLELO', 'HLEOL', 'HLLEO', 'HLLOE', 'HLOEL', 'HLOLE', 'HLELO', 'HLEOL', 'HLLEO', 'HLLOE', 'HLOEL', 'HLOLE', 'HOELL', 'HOELL', 'HOLEL', 'HOLLE', 'HOLEL', 'HOLLE', 'EHLLO', 'EHLOL', 'EHLLO', 'EHLOL', 'EHOLL', 'EHOLL', 'ELHLO', 'ELHOL', 'ELLHO', 'ELLOH', 'ELOHL', 'ELOLH', 'ELHLO', 'ELHOL', 'ELLHO', 'ELLOH', 'ELOHL', 'ELOLH', 'EOHLL', 'EOHLL', 'EOLHL', 'EOLLH', 'EOLHL', 'EOLLH', 'LHELO', 'LHEOL', 'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH', 'LEOHL', 'LEOLH', 'LLHEO', 'LLHOE', 'LLEHO', 'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE', 'LOLEH', 'LHELO', 'LHEOL', 'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH', 'LEOHL', 'LEOLH', 'LLHEO', 'LLHOE', 'LLEHO', 'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE', 'LOLEH', 'OHELL', 'OHELL', 'OHLEL', 'OHLLE', 'OHLEL', 'OHLLE', 'OEHLL', 'OEHLL', 'OELHL', 'OELLH', 'OELHL', 'OELLH', 'OLHEL', 'OLHLE', 'OLEHL', 'OLELH', 'OLLHE', 'OLLEH', 'OLHEL', 'OLHLE', 'OLEHL', 'OLELH', 'OLLHE', 'OLLEH']
+Full-Length Permutations (Unique Orderings, No Replacement, N=5): ['HELLO', 'HELOL', 'HELLO', 'HELOL', 'HEOLL', 'HEOLL',
+'HLELO', 'HLEOL', 'HLLEO', 'HLLOE', 'HLOEL', 'HLOLE', 'HLELO', 'HLEOL', 'HLLEO', 'HLLOE', 'HLOEL', 'HLOLE', 'HOELL',
+'HOELL', 'HOLEL', 'HOLLE', 'HOLEL', 'HOLLE', 'EHLLO', 'EHLOL', 'EHLLO', 'EHLOL', 'EHOLL', 'EHOLL', 'ELHLO', 'ELHOL',
+'ELLHO', 'ELLOH', 'ELOHL', 'ELOLH', 'ELHLO', 'ELHOL', 'ELLHO', 'ELLOH', 'ELOHL', 'ELOLH', 'EOHLL', 'EOHLL', 'EOLHL',
+'EOLLH', 'EOLHL', 'EOLLH', 'LHELO', 'LHEOL', 'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH',
+'LEOHL', 'LEOLH', 'LLHEO', 'LLHOE', 'LLEHO', 'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE',
+'LOLEH', 'LHELO', 'LHEOL', 'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH', 'LEOHL', 'LEOLH',
+'LLHEO', 'LLHOE', 'LLEHO', 'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE', 'LOLEH', 'OHELL',
+'OHELL', 'OHLEL', 'OHLLE', 'OHLEL', 'OHLLE', 'OEHLL', 'OEHLL', 'OELHL', 'OELLH', 'OELHL', 'OELLH', 'OLHEL', 'OLHLE',
+'OLEHL', 'OLELH', 'OLLHE', 'OLLEH', 'OLHEL', 'OLHLE', 'OLEHL', 'OLELH', 'OLLHE', 'OLLEH']
 
 Full-Length Combinations (Unique Sub-Sets, N=5): ['HELLO']
 
-Full-Length Combinations with Replacement (Unique Orderings, N=5): ['HHHHH', 'HHHHE', 'HHHHL', 'HHHHL', 'HHHHO', 'HHHEE', 'HHHEL', 'HHHEL', 'HHHEO', 'HHHLL', 'HHHLL', 'HHHLO', 'HHHLL', 'HHHLO', 'HHHOO', 'HHEEE', 'HHEEL', 'HHEEL', 'HHEEO', 'HHELL', 'HHELL', 'HHELO', 'HHELL', 'HHELO', 'HHEOO', 'HHLLL', 'HHLLL', 'HHLLO', 'HHLLL', 'HHLLO', 'HHLOO', 'HHLLL', 'HHLLO', 'HHLOO', 'HHOOO', 'HEEEE', 'HEEEL', 'HEEEL', 'HEEEO', 'HEELL', 'HEELL', 'HEELO', 'HEELL', 'HEELO', 'HEEOO', 'HELLL', 'HELLL', 'HELLO', 'HELLL', 'HELLO', 'HELOO', 'HELLL', 'HELLO', 'HELOO', 'HEOOO', 'HLLLL', 'HLLLL', 'HLLLO', 'HLLLL', 'HLLLO', 'HLLOO', 'HLLLL', 'HLLLO', 'HLLOO', 'HLOOO', 'HLLLL', 'HLLLO', 'HLLOO', 'HLOOO', 'HOOOO', 'EEEEE', 'EEEEL', 'EEEEL', 'EEEEO', 'EEELL', 'EEELL', 'EEELO', 'EEELL', 'EEELO', 'EEEOO', 'EELLL', 'EELLL', 'EELLO', 'EELLL', 'EELLO', 'EELOO', 'EELLL', 'EELLO', 'EELOO', 'EEOOO', 'ELLLL', 'ELLLL', 'ELLLO', 'ELLLL', 'ELLLO', 'ELLOO', 'ELLLL', 'ELLLO', 'ELLOO', 'ELOOO', 'ELLLL', 'ELLLO', 'ELLOO', 'ELOOO', 'EOOOO', 'LLLLL', 'LLLLL', 'LLLLO', 'LLLLL', 'LLLLO', 'LLLOO', 'LLLLL', 'LLLLO', 'LLLOO', 'LLOOO', 'LLLLL', 'LLLLO', 'LLLOO', 'LLOOO', 'LOOOO', 'LLLLL', 'LLLLO', 'LLLOO', 'LLOOO', 'LOOOO', 'OOOOO']
+Full-Length Combinations with Replacement (Unique Orderings, N=5): ['HHHHH', 'HHHHE', 'HHHHL', 'HHHHL', 'HHHHO', 'HHHEE',
+'HHHEL', 'HHHEL', 'HHHEO', 'HHHLL', 'HHHLL', 'HHHLO', 'HHHLL', 'HHHLO', 'HHHOO', 'HHEEE', 'HHEEL', 'HHEEL', 'HHEEO',
+'HHELL', 'HHELL', 'HHELO', 'HHELL', 'HHELO', 'HHEOO', 'HHLLL', 'HHLLL', 'HHLLO', 'HHLLL', 'HHLLO', 'HHLOO', 'HHLLL',
+'HHLLO', 'HHLOO', 'HHOOO', 'HEEEE', 'HEEEL', 'HEEEL', 'HEEEO', 'HEELL', 'HEELL', 'HEELO', 'HEELL', 'HEELO', 'HEEOO',
+'HELLL', 'HELLL', 'HELLO', 'HELLL', 'HELLO', 'HELOO', 'HELLL', 'HELLO', 'HELOO', 'HEOOO', 'HLLLL', 'HLLLL', 'HLLLO',
+'HLLLL', 'HLLLO', 'HLLOO', 'HLLLL', 'HLLLO', 'HLLOO', 'HLOOO', 'HLLLL', 'HLLLO', 'HLLOO', 'HLOOO', 'HOOOO', 'EEEEE',
+'EEEEL', 'EEEEL', 'EEEEO', 'EEELL', 'EEELL', 'EEELO', 'EEELL', 'EEELO', 'EEEOO', 'EELLL', 'EELLL', 'EELLO', 'EELLL',
+'EELLO', 'EELOO', 'EELLL', 'EELLO', 'EELOO', 'EEOOO', 'ELLLL', 'ELLLL', 'ELLLO', 'ELLLL', 'ELLLO', 'ELLOO', 'ELLLL',
+'ELLLO', 'ELLOO', 'ELOOO', 'ELLLL', 'ELLLO', 'ELLOO', 'ELOOO', 'EOOOO', 'LLLLL', 'LLLLL', 'LLLLO', 'LLLLL', 'LLLLO',
+'LLLOO', 'LLLLL', 'LLLLO', 'LLLOO', 'LLOOO', 'LLLLL', 'LLLLO', 'LLLOO', 'LLOOO', 'LOOOO', 'LLLLL', 'LLLLO', 'LLLOO',
+'LLOOO', 'LOOOO', 'OOOOO']
 
-Full-Length Cross-Product ("HELLO" x "HELLO"): ['HH', 'HE', 'HL', 'HL', 'HO', 'EH', 'EE', 'EL', 'EL', 'EO', 'LH', 'LE', 'LL', 'LL', 'LO', 'LH', 'LE', 'LL', 'LL', 'LO', 'OH', 'OE', 'OL', 'OL', 'OO']
+Full-Length Cross-Product ("HELLO" x "HELLO"): ['HH', 'HE', 'HL', 'HL', 'HO', 'EH', 'EE', 'EL', 'EL', 'EO', 'LH', 'LE',
+'LL', 'LL', 'LO', 'LH', 'LE', 'LL', 'LL', 'LO', 'OH', 'OE', 'OL', 'OL', 'OO']
 
 
 
 >> Processing Iterable: HELLO
 
-Variable-Length Permutations (Unique Orderings, No Replacement, N=[1, 2, 3, 4, 5]): ['H', 'E', 'L', 'L', 'O', 'HE', 'HL', 'HL', 'HO', 'EH', 'EL', 'EL', 'EO', 'LH', 'LE', 'LL', 'LO', 'LH', 'LE', 'LL', 'LO', 'OH', 'OE', 'OL', 'OL', 'HEL', 'HEL', 'HEO', 'HLE', 'HLL', 'HLO', 'HLE', 'HLL', 'HLO', 'HOE', 'HOL', 'HOL', 'EHL', 'EHL', 'EHO', 'ELH', 'ELL', 'ELO', 'ELH', 'ELL', 'ELO', 'EOH', 'EOL', 'EOL', 'LHE', 'LHL', 'LHO', 'LEH', 'LEL', 'LEO', 'LLH', 'LLE', 'LLO', 'LOH', 'LOE', 'LOL', 'LHE', 'LHL', 'LHO', 'LEH', 'LEL', 'LEO', 'LLH', 'LLE', 'LLO', 'LOH', 'LOE', 'LOL', 'OHE', 'OHL', 'OHL', 'OEH', 'OEL', 'OEL', 'OLH', 'OLE', 'OLL', 'OLH', 'OLE', 'OLL', 'HELL', 'HELO', 'HELL', 'HELO', 'HEOL', 'HEOL', 'HLEL', 'HLEO', 'HLLE', 'HLLO', 'HLOE', 'HLOL', 'HLEL', 'HLEO', 'HLLE', 'HLLO', 'HLOE', 'HLOL', 'HOEL', 'HOEL', 'HOLE', 'HOLL', 'HOLE', 'HOLL', 'EHLL', 'EHLO', 'EHLL', 'EHLO', 'EHOL', 'EHOL', 'ELHL', 'ELHO', 'ELLH', 'ELLO', 'ELOH', 'ELOL', 'ELHL', 'ELHO', 'ELLH', 'ELLO', 'ELOH', 'ELOL', 'EOHL', 'EOHL', 'EOLH', 'EOLL', 'EOLH', 'EOLL', 'LHEL', 'LHEO', 'LHLE', 'LHLO', 'LHOE', 'LHOL', 'LEHL', 'LEHO', 'LELH', 'LELO', 'LEOH', 'LEOL', 'LLHE', 'LLHO', 'LLEH', 'LLEO', 'LLOH', 'LLOE', 'LOHE', 'LOHL', 'LOEH', 'LOEL', 'LOLH', 'LOLE', 'LHEL', 'LHEO', 'LHLE', 'LHLO', 'LHOE', 'LHOL', 'LEHL', 'LEHO', 'LELH', 'LELO', 'LEOH', 'LEOL', 'LLHE', 'LLHO', 'LLEH', 'LLEO', 'LLOH', 'LLOE', 'LOHE', 'LOHL', 'LOEH', 'LOEL', 'LOLH', 'LOLE', 'OHEL', 'OHEL', 'OHLE', 'OHLL', 'OHLE', 'OHLL', 'OEHL', 'OEHL', 'OELH', 'OELL', 'OELH', 'OELL', 'OLHE', 'OLHL', 'OLEH', 'OLEL', 'OLLH', 'OLLE', 'OLHE', 'OLHL', 'OLEH', 'OLEL', 'OLLH', 'OLLE', 'HELLO', 'HELOL', 'HELLO', 'HELOL', 'HEOLL', 'HEOLL', 'HLELO', 'HLEOL', 'HLLEO', 'HLLOE', 'HLOEL', 'HLOLE', 'HLELO', 'HLEOL', 'HLLEO', 'HLLOE', 'HLOEL', 'HLOLE', 'HOELL', 'HOELL', 'HOLEL', 'HOLLE', 'HOLEL', 'HOLLE', 'EHLLO', 'EHLOL', 'EHLLO', 'EHLOL', 'EHOLL', 'EHOLL', 'ELHLO', 'ELHOL', 'ELLHO', 'ELLOH', 'ELOHL', 'ELOLH', 'ELHLO', 'ELHOL', 'ELLHO', 'ELLOH', 'ELOHL', 'ELOLH', 'EOHLL', 'EOHLL', 'EOLHL', 'EOLLH', 'EOLHL', 'EOLLH', 'LHELO', 'LHEOL', 'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH', 'LEOHL', 'LEOLH', 'LLHEO', 'LLHOE', 'LLEHO', 'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE', 'LOLEH', 'LHELO', 'LHEOL', 'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH', 'LEOHL', 'LEOLH', 'LLHEO', 'LLHOE', 'LLEHO', 'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE', 'LOLEH', 'OHELL', 'OHELL', 'OHLEL', 'OHLLE', 'OHLEL', 'OHLLE', 'OEHLL', 'OEHLL', 'OELHL', 'OELLH', 'OELHL', 'OELLH', 'OLHEL', 'OLHLE', 'OLEHL', 'OLELH', 'OLLHE', 'OLLEH', 'OLHEL', 'OLHLE', 'OLEHL', 'OLELH', 'OLLHE', 'OLLEH']
+Variable-Length Permutations (Unique Orderings, No Replacement, N=[1, 2, 3, 4, 5]): ['H', 'E', 'L', 'L', 'O', 'HE', 'HL', 'HL',
+'HO', 'EH', 'EL', 'EL', 'EO', 'LH', 'LE', 'LL', 'LO', 'LH', 'LE', 'LL', 'LO', 'OH', 'OE', 'OL', 'OL', 'HEL', 'HEL', 'HEO',
+'HLE', 'HLL', 'HLO', 'HLE', 'HLL', 'HLO', 'HOE', 'HOL', 'HOL', 'EHL', 'EHL', 'EHO', 'ELH', 'ELL', 'ELO', 'ELH', 'ELL',
+'ELO', 'EOH', 'EOL', 'EOL', 'LHE', 'LHL', 'LHO', 'LEH', 'LEL', 'LEO', 'LLH', 'LLE', 'LLO', 'LOH', 'LOE', 'LOL', 'LHE',
+'LHL', 'LHO', 'LEH', 'LEL', 'LEO', 'LLH', 'LLE', 'LLO', 'LOH', 'LOE', 'LOL', 'OHE', 'OHL', 'OHL', 'OEH', 'OEL', 'OEL',
+'OLH', 'OLE', 'OLL', 'OLH', 'OLE', 'OLL', 'HELL', 'HELO', 'HELL', 'HELO', 'HEOL', 'HEOL', 'HLEL', 'HLEO', 'HLLE', 'HLLO',
+'HLOE', 'HLOL', 'HLEL', 'HLEO', 'HLLE', 'HLLO', 'HLOE', 'HLOL', 'HOEL', 'HOEL', 'HOLE', 'HOLL', 'HOLE', 'HOLL', 'EHLL',
+'EHLO', 'EHLL', 'EHLO', 'EHOL', 'EHOL', 'ELHL', 'ELHO', 'ELLH', 'ELLO', 'ELOH', 'ELOL', 'ELHL', 'ELHO', 'ELLH', 'ELLO',
+'ELOH', 'ELOL', 'EOHL', 'EOHL', 'EOLH', 'EOLL', 'EOLH', 'EOLL', 'LHEL', 'LHEO', 'LHLE', 'LHLO', 'LHOE', 'LHOL', 'LEHL',
+'LEHO', 'LELH', 'LELO', 'LEOH', 'LEOL', 'LLHE', 'LLHO', 'LLEH', 'LLEO', 'LLOH', 'LLOE', 'LOHE', 'LOHL', 'LOEH', 'LOEL',
+'LOLH', 'LOLE', 'LHEL', 'LHEO', 'LHLE', 'LHLO', 'LHOE', 'LHOL', 'LEHL', 'LEHO', 'LELH', 'LELO', 'LEOH', 'LEOL', 'LLHE',
+'LLHO', 'LLEH', 'LLEO', 'LLOH', 'LLOE', 'LOHE', 'LOHL', 'LOEH', 'LOEL', 'LOLH', 'LOLE', 'OHEL', 'OHEL', 'OHLE', 'OHLL',
+'OHLE', 'OHLL', 'OEHL', 'OEHL', 'OELH', 'OELL', 'OELH', 'OELL', 'OLHE', 'OLHL', 'OLEH', 'OLEL', 'OLLH', 'OLLE', 'OLHE',
+'OLHL', 'OLEH', 'OLEL', 'OLLH', 'OLLE', 'HELLO', 'HELOL', 'HELLO', 'HELOL', 'HEOLL', 'HEOLL', 'HLELO', 'HLEOL', 'HLLEO',
+'HLLOE', 'HLOEL', 'HLOLE', 'HLELO', 'HLEOL', 'HLLEO', 'HLLOE', 'HLOEL', 'HLOLE', 'HOELL', 'HOELL', 'HOLEL', 'HOLLE',
+'HOLEL', 'HOLLE', 'EHLLO', 'EHLOL', 'EHLLO', 'EHLOL', 'EHOLL', 'EHOLL', 'ELHLO', 'ELHOL', 'ELLHO', 'ELLOH', 'ELOHL',
+'ELOLH', 'ELHLO', 'ELHOL', 'ELLHO', 'ELLOH', 'ELOHL', 'ELOLH', 'EOHLL', 'EOHLL', 'EOLHL', 'EOLLH', 'EOLHL', 'EOLLH',
+'LHELO', 'LHEOL', 'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH', 'LEOHL', 'LEOLH', 'LLHEO',
+'LLHOE', 'LLEHO', 'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE', 'LOLEH', 'LHELO', 'LHEOL',
+'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH', 'LEOHL', 'LEOLH', 'LLHEO', 'LLHOE', 'LLEHO',
+'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE', 'LOLEH', 'OHELL', 'OHELL', 'OHLEL', 'OHLLE',
+'OHLEL', 'OHLLE', 'OEHLL', 'OEHLL', 'OELHL', 'OELLH', 'OELHL', 'OELLH', 'OLHEL', 'OLHLE', 'OLEHL', 'OLELH', 'OLLHE',
+'OLLEH', 'OLHEL', 'OLHLE', 'OLEHL', 'OLELH', 'OLLHE', 'OLLEH']
 
 
 
 >> Processing Iterable: [1, 2, 3, 4]
 
-Full-Length Permutations (Unique Orderings, No Replacement, N=4): ['1234', '1243', '1324', '1342', '1423', '1432', '2134', '2143', '2314', '2341', '2413', '2431', '3124', '3142', '3214', '3241', '3412', '3421', '4123', '4132', '4213', '4231', '4312', '4321']
+Full-Length Permutations (Unique Orderings, No Replacement, N=4): ['1234', '1243', '1324', '1342', '1423', '1432', '2134',
+'2143', '2314', '2341', '2413', '2431', '3124', '3142', '3214', '3241', '3412', '3421', '4123', '4132', '4213', '4231', '4312',
+'4321']
 
 Full-Length Combinations (Unique Sub-Sets, N=4): ['1234']
 
-Full-Length Combinations with Replacement (Unique Orderings, N=4): ['1111', '1112', '1113', '1114', '1122', '1123', '1124', '1133', '1134', '1144', '1222', '1223', '1224', '1233', '1234', '1244', '1333', '1334', '1344', '1444', '2222', '2223', '2224', '2233', '2234', '2244', '2333', '2334', '2344', '2444', '3333', '3334', '3344', '3444', '4444']
+Full-Length Combinations with Replacement (Unique Orderings, N=4): ['1111', '1112', '1113', '1114', '1122', '1123', '1124',
+'1133', '1134', '1144', '1222', '1223', '1224', '1233', '1234', '1244', '1333', '1334', '1344', '1444', '2222', '2223',
+'2224', '2233', '2234', '2244', '2333', '2334', '2344', '2444', '3333', '3334', '3344', '3444', '4444']
 
-Full-Length Cross-Product ("[1, 2, 3, 4]" x "[1, 2, 3, 4]"): ['11', '12', '13', '14', '21', '22', '23', '24', '31', '32', '33', '34', '41', '42', '43', '44']
+Full-Length Cross-Product ("[1, 2, 3, 4]" x "[1, 2, 3, 4]"): ['11', '12', '13', '14', '21', '22', '23', '24', '31', '32',
+'33', '34', '41', '42', '43', '44']
 
 
 
 >> Processing Iterable: [1, 2, 3, 4]
 
-Variable-Length Permutations (Unique Orderings, No Replacement, N=[1, 2, 3, 4]): ['1', '2', '3', '4', '12', '13', '14', '21', '23', '24', '31', '32', '34', '41', '42', '43', '123', '124', '132', '134', '142', '143', '213', '214', '231', '234', '241', '243', '312', '314', '321', '324', '341', '342', '412', '413', '421', '423', '431', '432', '1234', '1243', '1324', '1342', '1423', '1432', '2134', '2143', '2314', '2341', '2413', '2431', '3124', '3142', '3214', '3241', '3412', '3421', '4123', '4132', '4213', '4231', '4312', '4321']
+Variable-Length Permutations (Unique Orderings, No Replacement, N=[1, 2, 3, 4]): ['1', '2', '3', '4', '12', '13', '14', '21',
+'23', '24', '31', '32', '34', '41', '42', '43', '123', '124', '132', '134', '142', '143', '213', '214', '231', '234', '241',
+'243', '312', '314', '321', '324', '341', '342', '412', '413', '421', '423', '431', '432', '1234', '1243', '1324', '1342',
+'1423', '1432', '2134', '2143', '2314', '2341', '2413', '2431', '3124', '3142', '3214', '3241', '3412', '3421', '4123',
+'4132', '4213', '4231', '4312', '4321']
 ```
 
 <a id="mixed_iteratorspy"></a>
