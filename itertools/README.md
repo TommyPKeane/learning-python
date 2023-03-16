@@ -7,6 +7,7 @@
     - [`permutations.py`](#permutationspy)
 - [`iterable_operators.py`](#iterable_operatorspy)
 - [`mixed_iterators.py`](#mixed_iteratorspy)
+- [`scrabble.py`](#scrabblepy)
 - [References](#references)
 - [License](#license)
 
@@ -179,6 +180,29 @@ which should produce the output:
 >> Result of itertools.zip_longest(): ['1A', '2B', '3C', '_D']
 >> Result after dropping trailing pairing: ['1A', '2B', '3C']
 >> Compared to normal zip(): ['1A', '2B', '3C']
+```
+
+<a id="scrabblepy"></a>
+## `scrabble.py`
+
+This example follows the idea of the game of Scrabble™ where you have a set of letters and an agreed dictionary, and you are trying to create words that you can lay out on the game board to score points.
+
+We mimic the basics of the game board having words already on it by introducing the ability to use "mix-in" letters to add to your own set of letters.
+
+Run the example with the following command:
+
+```bash
+python ./scrabble.py
+```
+
+which should produce the output:
+
+```bash
+> Letters: ['S', 'T', 'D', 'H', 'I', 'E', 'R', 'C']
+> Valid Words (4): ['SIT', 'SITH', 'SITE', 'SITED']
+
+> Letters: ['S', 'T', 'D', 'H', 'I', 'E', 'R', 'C'] | Mixin Letters: ['A', 'O']
+> Valid Words (5): ['SIT', 'SITH', 'SITE', 'SITED', 'SITAR']
 ```
 
 <a id="references"></a>
