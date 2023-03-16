@@ -40,4 +40,5 @@ if __name__ == "__main__":
     print(f">> Fill Character for Mismatched Lengths: \"{fill_char}\"")
     print(f">> Result of itertools.zip_longest(): {zipped_strings}")
     print(f">> Result after dropping trailing pairing: {[string for string in zipped_strings if fill_char not in string]}")
+    print(f">> Compared to normal zip(): {[''.join(map(str, tpl)) for tpl in zip(long_iterable, short_iterable)]}")
     print()

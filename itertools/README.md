@@ -147,6 +147,7 @@ which should produce the output:
 >> Fill Character for Mismatched Lengths: "_"
 >> Result of itertools.zip_longest(): ['1A', '2B', '3C', '_D']
 >> Result after dropping trailing pairing: ['1A', '2B', '3C']
+>> Compared to normal zip(): ['1A', '2B', '3C']
 ```
 
 <a id="references"></a>
