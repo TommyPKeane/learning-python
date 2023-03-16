@@ -5,6 +5,7 @@
 - [Setup](#setup)
 - [Examples](#examples)
     - [`permutations.py`](#permutationspy)
+- [`mixed_iterators.py`](#mixed_iteratorspy)
 - [References](#references)
 - [License](#license)
 
@@ -35,7 +36,7 @@ python ./permutations.py
 
 which should produce the output:
 
-```
+```bash
 >> Processing Iterable: HELLO
 
 Full-Length Permutations (Unique Orderings, No Replacement, N=5): ['HELLO', 'HELOL', 'HELLO', 'HELOL', 'HEOLL', 'HEOLL', 'HLELO', 'HLEOL', 'HLLEO', 'HLLOE', 'HLOEL', 'HLOLE', 'HLELO', 'HLEOL', 'HLLEO', 'HLLOE', 'HLOEL', 'HLOLE', 'HOELL', 'HOELL', 'HOLEL', 'HOLLE', 'HOLEL', 'HOLLE', 'EHLLO', 'EHLOL', 'EHLLO', 'EHLOL', 'EHOLL', 'EHOLL', 'ELHLO', 'ELHOL', 'ELLHO', 'ELLOH', 'ELOHL', 'ELOLH', 'ELHLO', 'ELHOL', 'ELLHO', 'ELLOH', 'ELOHL', 'ELOLH', 'EOHLL', 'EOHLL', 'EOLHL', 'EOLLH', 'EOLHL', 'EOLLH', 'LHELO', 'LHEOL', 'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH', 'LEOHL', 'LEOLH', 'LLHEO', 'LLHOE', 'LLEHO', 'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE', 'LOLEH', 'LHELO', 'LHEOL', 'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH', 'LEOHL', 'LEOLH', 'LLHEO', 'LLHOE', 'LLEHO', 'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE', 'LOLEH', 'OHELL', 'OHELL', 'OHLEL', 'OHLLE', 'OHLEL', 'OHLLE', 'OEHLL', 'OEHLL', 'OELHL', 'OELLH', 'OELHL', 'OELLH', 'OLHEL', 'OLHLE', 'OLEHL', 'OLELH', 'OLLHE', 'OLLEH', 'OLHEL', 'OLHLE', 'OLEHL', 'OLELH', 'OLLHE', 'OLLEH']
@@ -69,6 +70,32 @@ Full-Length Cross-Product ("[1, 2, 3, 4]" x "[1, 2, 3, 4]"): ['11', '12', '13', 
 >> Processing Iterable: [1, 2, 3, 4]
 
 Variable-Length Permutations (Unique Orderings, No Replacement, N=[1, 2, 3, 4]): ['1', '2', '3', '4', '12', '13', '14', '21', '23', '24', '31', '32', '34', '41', '42', '43', '123', '124', '132', '134', '142', '143', '213', '214', '231', '234', '241', '243', '312', '314', '321', '324', '341', '342', '412', '413', '421', '423', '431', '432', '1234', '1243', '1324', '1342', '1423', '1432', '2134', '2143', '2314', '2341', '2413', '2431', '3124', '3142', '3214', '3241', '3412', '3421', '4123', '4132', '4213', '4231', '4312', '4321']
+```
+
+<a id="mixed_iteratorspy"></a>
+## `mixed_iterators.py`
+
+Run the example with the following command:
+
+```bash
+python ./mixed_iterators.py
+```
+
+which should produce the output:
+
+```bash
+>> Zipping: "HELLO" and "YOU"
+>> Fill Character for Mismatched Lengths: "_"
+>> Result of itertools.zip_longest(): ['HY', 'EO', 'LU', 'L_', 'O_']
+
+>> Zipping: "YOU" and "HELLO"
+>> Fill Character for Mismatched Lengths: "_"
+>> Result of itertools.zip_longest(): ['YH', 'OE', 'UL', '_L', '_O']
+
+>> Zipping: "[1, 2, 3]" and "['A', 'B', 'C', 'D']"
+>> Fill Character for Mismatched Lengths: "_"
+>> Result of itertools.zip_longest(): ['1A', '2B', '3C', '_D']
+>> Result after dropping trailing pairing: ['1A', '2B', '3C']
 ```
 
 <a id="references"></a>
