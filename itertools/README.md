@@ -5,7 +5,6 @@
 - [Setup](#setup)
 - [Examples](#examples)
     - [`permutations.py`](#permutationspy)
-- [`mixed_iterators.py`](#mixed_iteratorspy)
 - [References](#references)
 - [License](#license)
 
@@ -36,7 +35,7 @@ python ./permutations.py
 
 which should produce the output:
 
-```bash
+> ```bash
 >> Processing Iterable: HELLO
 
 Full-Length Permutations (Unique Orderings, No Replacement, N=5): ['HELLO', 'HELOL', 'HELLO', 'HELOL', 'HEOLL', 'HEOLL', 'HLELO', 'HLEOL', 'HLLEO', 'HLLOE', 'HLOEL', 'HLOLE', 'HLELO', 'HLEOL', 'HLLEO', 'HLLOE', 'HLOEL', 'HLOLE', 'HOELL', 'HOELL', 'HOLEL', 'HOLLE', 'HOLEL', 'HOLLE', 'EHLLO', 'EHLOL', 'EHLLO', 'EHLOL', 'EHOLL', 'EHOLL', 'ELHLO', 'ELHOL', 'ELLHO', 'ELLOH', 'ELOHL', 'ELOLH', 'ELHLO', 'ELHOL', 'ELLHO', 'ELLOH', 'ELOHL', 'ELOLH', 'EOHLL', 'EOHLL', 'EOLHL', 'EOLLH', 'EOLHL', 'EOLLH', 'LHELO', 'LHEOL', 'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH', 'LEOHL', 'LEOLH', 'LLHEO', 'LLHOE', 'LLEHO', 'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE', 'LOLEH', 'LHELO', 'LHEOL', 'LHLEO', 'LHLOE', 'LHOEL', 'LHOLE', 'LEHLO', 'LEHOL', 'LELHO', 'LELOH', 'LEOHL', 'LEOLH', 'LLHEO', 'LLHOE', 'LLEHO', 'LLEOH', 'LLOHE', 'LLOEH', 'LOHEL', 'LOHLE', 'LOEHL', 'LOELH', 'LOLHE', 'LOLEH', 'OHELL', 'OHELL', 'OHLEL', 'OHLLE', 'OHLEL', 'OHLLE', 'OEHLL', 'OEHLL', 'OELHL', 'OELLH', 'OELHL', 'OELLH', 'OLHEL', 'OLHLE', 'OLEHL', 'OLELH', 'OLLHE', 'OLLEH', 'OLHEL', 'OLHLE', 'OLEHL', 'OLELH', 'OLLHE', 'OLLEH']
