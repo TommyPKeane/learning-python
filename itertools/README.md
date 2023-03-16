@@ -141,6 +141,8 @@ which should produce the output:
 >> Custom Accumulation (i + j - 2): [1, 1, 2, 5, 10, 17, 26, 37]
 >> Drop first N Values as long as they adhere to custom check (x < 10): [11, 13]
 >> Keep first N Values as long as they adhere to custom check (x < 10): [1, 2, 3, 5, 7, 9]
+>> Keep any Values that adhere to the custom check (x < 10): [1, 2, 3, 5, 7, 9]
+>> Keep any Values that DO NOT adhere to the custom check (x < 10): [11, 13]
 
 
 >> Example Iterable: [1, 2, 3, 5, 7, 9, 11, 13, 11, 12, 10, 9, 8, 7, 6]
@@ -148,6 +150,8 @@ which should produce the output:
 >> Custom Accumulation (i + j - 2): [1, 1, 2, 5, 10, 17, 26, 37, 46, 56, 64, 71, 77, 82, 86]
 >> Drop first N Values as long as they adhere to custom check (x < 10): [11, 13, 11, 12, 10, 9, 8, 7, 6]
 >> Keep first N Values as long as they adhere to custom check (x < 10): [1, 2, 3, 5, 7, 9]
+>> Keep any Values that adhere to the custom check (x < 10): [1, 2, 3, 5, 7, 9, 9, 8, 7, 6]
+>> Keep any Values that DO NOT adhere to the custom check (x < 10): [11, 13, 11, 12, 10]
 ```
 
 <a id="mixed_iteratorspy"></a>

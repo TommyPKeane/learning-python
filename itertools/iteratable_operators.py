@@ -18,6 +18,12 @@ if __name__ == "__main__":
     before_values = list(itertools.takewhile(lambda x: x < 10, example_iterable))
     print(f">> Keep first N Values as long as they adhere to custom check (x < 10): {before_values}")
 
+    filtered_values = list(filter(lambda x: x < 10, example_iterable))
+    print(f">> Keep any Values that adhere to the custom check (x < 10): {filtered_values}")
+
+    alt_filtered_values = list(itertools.filterfalse(lambda x: x < 10, example_iterable))
+    print(f">> Keep any Values that DO NOT adhere to the custom check (x < 10): {alt_filtered_values}")
+
     print()
     print()
 
@@ -36,3 +42,9 @@ if __name__ == "__main__":
 
     before_values = list(itertools.takewhile(lambda x: x < 10, example_iterable))
     print(f">> Keep first N Values as long as they adhere to custom check (x < 10): {before_values}")
+
+    filtered_values = list(filter(lambda x: x < 10, example_iterable))
+    print(f">> Keep any Values that adhere to the custom check (x < 10): {filtered_values}")
+
+    alt_filtered_values = list(itertools.filterfalse(lambda x: x < 10, example_iterable))
+    print(f">> Keep any Values that DO NOT adhere to the custom check (x < 10): {alt_filtered_values}")
