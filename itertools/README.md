@@ -5,6 +5,7 @@
 - [Setup](#setup)
 - [Examples](#examples)
     - [`permutations.py`](#permutationspy)
+- [`iterable_operators.py`](#iterable_operatorspy)
 - [`mixed_iterators.py`](#mixed_iteratorspy)
 - [References](#references)
 - [License](#license)
@@ -121,6 +122,32 @@ Variable-Length Permutations (Unique Orderings, No Replacement, N=[1, 2, 3, 4]):
 '243', '312', '314', '321', '324', '341', '342', '412', '413', '421', '423', '431', '432', '1234', '1243', '1324', '1342',
 '1423', '1432', '2134', '2143', '2314', '2341', '2413', '2431', '3124', '3142', '3214', '3241', '3412', '3421', '4123',
 '4132', '4213', '4231', '4312', '4321']
+```
+
+<a id="iterable_operatorspy"></a>
+## `iterable_operators.py`
+
+Run the example with the following command:
+
+```bash
+python ./iterable_operators.py
+```
+
+which should produce the output:
+
+```bash
+>> Example Iterable: [1, 2, 3, 5, 7, 9, 11, 13]
+>> Cumulative Summation (cumsum): [1, 3, 6, 11, 18, 27, 38, 51]
+>> Custom Accumulation (i + j - 2): [1, 1, 2, 5, 10, 17, 26, 37]
+>> Drop first N Values as long as they adhere to custom check (x < 10): [11, 13]
+>> Keep first N Values as long as they adhere to custom check (x < 10): [1, 2, 3, 5, 7, 9]
+
+
+>> Example Iterable: [1, 2, 3, 5, 7, 9, 11, 13, 11, 12, 10, 9, 8, 7, 6]
+>> Cumulative Summation (cumsum): [1, 3, 6, 11, 18, 27, 38, 51, 62, 74, 84, 93, 101, 108, 114]
+>> Custom Accumulation (i + j - 2): [1, 1, 2, 5, 10, 17, 26, 37, 46, 56, 64, 71, 77, 82, 86]
+>> Drop first N Values as long as they adhere to custom check (x < 10): [11, 13, 11, 12, 10, 9, 8, 7, 6]
+>> Keep first N Values as long as they adhere to custom check (x < 10): [1, 2, 3, 5, 7, 9]
 ```
 
 <a id="mixed_iteratorspy"></a>
