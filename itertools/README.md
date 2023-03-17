@@ -5,9 +5,9 @@
 - [Setup](#setup)
 - [Examples](#examples)
     - [`permutations.py`](#permutationspy)
-- [`iterable_operators.py`](#iterable_operatorspy)
-- [`mixed_iterators.py`](#mixed_iteratorspy)
-- [`scrabble.py`](#scrabblepy)
+    - [`iterable_operators.py`](#iterable_operatorspy)
+    - [`mixed_iterators.py`](#mixed_iteratorspy)
+    - [`scrabble.py`](#scrabblepy)
 - [References](#references)
 - [License](#license)
 
@@ -126,7 +126,7 @@ Variable-Length Permutations (Unique Orderings, No Replacement, N=[1, 2, 3, 4]):
 ```
 
 <a id="iterable_operatorspy"></a>
-## `iterable_operators.py`
+### `iterable_operators.py`
 
 Run the example with the following command:
 
@@ -156,7 +156,7 @@ which should produce the output:
 ```
 
 <a id="mixed_iteratorspy"></a>
-## `mixed_iterators.py`
+### `mixed_iterators.py`
 
 Run the example with the following command:
 
@@ -183,7 +183,7 @@ which should produce the output:
 ```
 
 <a id="scrabblepy"></a>
-## `scrabble.py`
+### `scrabble.py`
 
 This example follows the idea of the game of Scrabble™ where you have a set of letters and an agreed dictionary, and you are trying to create words that you can lay out on the game board to score points.
 
