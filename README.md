@@ -1,6 +1,6 @@
 # Learning Python
 
-__tommy teaches tommy__ (and anyone who wants to actually read this) how to code in Python, with a major focus on all the functionality available in the Python Standard Library (PSL).
+__tommy teaches tommy__ (and anyone who wants to actually read this) how to code in Python, with a major focus on all the functionality available in the Python Standard Library (PSL) and Python syntax.
 
 I've been doing various amounts of Python coding since 2009-ish in personal, professional, and academic projects, but you're never too old to learn, and they keep making computers better and worse all the time.
 
@@ -26,7 +26,17 @@ Also note that each self-contained directory will also have a top-level `README.
 <a id="what-is-python"></a>
 ## What is Python?
 
+Python is an interpreted Programming Language, meaning that the written code is passed through an "interpreter" runtime, which reactively parses the code and then runs the interpreted instructions.
 
+<!--
+Other interpreted languages are those like Ruby, SQL, JavaScript (TypeScript), R, Julia, and MATLAB (Octave). With an interpreter, the intention is that the code itself is portable between any system where the interpreter can run, and then to run the code you need the relevant interpreter to be installed.
+
+This is in contrast to compiled languages like C, C++, D, _etc._, where you actually take the code and compile it into a self-contained executable or portable library. With compiled languages, as long as the relevant external/shared libraries are available on a system, you can simply bring the compiled executable to that system and run the software without needing to have the compiler installed.
+ -->
+
+Python is a relatively strict Object-Oriented Programming (OOP) Language, where almost everything is an object; an instantiation of a `class` definition (custom types). In contrast to a statically-typed language like C++, though, Python is dynamically-typed, meaning that the "variables" (aliases) can refer to different types (classes) throughout the runtime of the code, depending on context/assignment.
+
+So if you define `x = 3` and then later in the same file (module) you say `x = "hello"`, then `x` can separately (in the same program/script) be known as an integer and then as a string.
 
 <a id="whats-this-tommy-teaches-tommy-thing-all-about"></a>
 ## What's this "tommy teaches tommy" thing all about?
