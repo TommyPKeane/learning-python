@@ -1,0 +1,13 @@
+---
+# GitHub YAML Issue Template for Documentation Issues
+#
+# Tommy P. Keane
+# https://www.tommypkeane.com
+# https://github.com/tommypkeane
+#
+name: "Documentation Issue"
+about: "Use this template for tracking new features."
+title: "[DATE]: [FEATURE NAME]"
+labels: "tracking issue, needs triage"
+assignees: "tommypkeane"
+---
