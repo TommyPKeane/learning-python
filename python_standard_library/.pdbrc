@@ -1,0 +1,15 @@
+# Python Debugger Configuration File
+#
+# To run, use:
+#
+# ```bash
+# python -m pdb ${module_filename}
+# ```
+#
+# References:
+# - https://docs.python.org/3/library/pdb.html#debugger-commands
+#
+# Commands:
+# - `b(reak) [([filename:]lineno | function) [, condition]]`
+# - `tbreak [([filename:]lineno | function) [, condition]]`
+# - `cl(ear) [filename:lineno | bpnumber ...]`
