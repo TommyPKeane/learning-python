@@ -5,7 +5,7 @@ This directory contains custom examples demonstrating the features and functiona
 <!-- MarkdownTOC -->
 
 - [Setup](#setup)
-- [Examples](#examples)
+- [Custom `python_standard_library` Package](#custom-python_standard_library-package)
 - [References](#references)
 - [License](#license)
 
@@ -29,11 +29,20 @@ Once you have these tools installed and configured properly for your system (a p
 1. `pip install poetry`
 1. `poetry install`
 
-<a id="examples"></a>
-## Examples
+<a id="custom-python_standard_library-package"></a>
+## Custom `python_standard_library` Package
 
-This directory contains separate Python modules (code files) that run independently to demonstrate different features of the `decimal` package from the Python Standard Library (PSL) -- meaning that this is a built-in package that comes with the Python interpreter when you install it, and requires no additional dependencies.
+This repo contains a custom Python Package managed through `poetry` and named: `python_standard_library`. To demonstrate examples of the features of the Python Standard Library (PSL), we have a mix of custom modules/scripts and Unit-Testing.
 
+The Unit-Testing can be run with:
+
+```bash
+pytest
+```
+
+Though, you'll only see the Code Coverage result; so you'll need to actually read through the `tests_unit/` directory structure to review the code to see and understand the examples. You can also add/modify the logging if you want to do some further introspection, or even put in some breakpoints in the tests and run the Python Debugger (`pdb`) if you want to step through the code as it gets interpreted in the runtime.
+
+> 🤷‍♀️ 👻 🤓 _... I can't decide which approach is most useful to demonstrate and explain the Python Standard Library features, so I first made a bunch of scripts that just printed-out results, but now I've changed this to use Unit-Testing with `pytest` and `hypothesis`. I may end-up doing both, or also maybe setup Jupyter Lab for iPython Notebooks as another avenue of examples. We'll see what happens, so tag along for this extremely verbosely neurotically solipsisticly boring adventure! (The most tommy kind of adventure there is!)_
 
 <a id="references"></a>
 ## References
