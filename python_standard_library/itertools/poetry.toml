@@ -1,8 +1,0 @@
-[installer]
-parallel = true
-# max-workers = {number_of_cores + 4}
-
-[virtualenvs]
-create = false
-in-project = true
-prefer-active-python = true
