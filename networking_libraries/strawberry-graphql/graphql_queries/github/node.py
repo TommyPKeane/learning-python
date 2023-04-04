@@ -1,5 +1,12 @@
 """GitHub's GraphQL Base Object
 """
+import logging
+
+import strawberry
+
+
+module_log = logging.getLogger(__name__)
+
 
 class Node:
     """GitHub's Base Class for GraphQL Objects

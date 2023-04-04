@@ -6,11 +6,15 @@ References:
 """
 import datetime
 import enum
+import logging
 
 import strawberry
 
 from graphql_queries.github.node import Node
 from graphql_queries.query import GraphQLQuery
+
+
+module_log = logging.getLogger(__name__)
 
 
 @strawberry.type

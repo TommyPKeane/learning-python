@@ -16,7 +16,6 @@ packages = []
 
 [tool.poetry.dependencies]
 python = "^3.11"
-ariadne = "^0.19.1"
 strawberry-graphql = "^0.168.2"
 
 [tool.poetry.group.dev.dependencies]
