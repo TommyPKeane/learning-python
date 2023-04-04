@@ -47,7 +47,10 @@ Though, you'll only see the Code Coverage result; so you'll need to actually rea
 <a id="references"></a>
 ## References
 
-- ...
+- https://www.python.org/downloads/release/python-3110/
+- https://docs.python.org/3/whatsnew/3.11.html
+- https://docs.pytest.org/en/7.2.x/explanation/fixtures.html
+- https://pythontest.com/pytest-tips-tricks/
 
 <a id="license"></a>
 ## License
