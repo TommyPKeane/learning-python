@@ -7,11 +7,13 @@ References:
 import datetime
 import enum
 
-import ariadne
+import strawberry
+
 from graphql_queries.github.node import Node
 from graphql_queries.query import GraphQLQuery
 
 
+@strawberry.type
 class SecurityAdvisoryClassification(str, enum.Enum):
     """
     References:
@@ -20,12 +22,8 @@ class SecurityAdvisoryClassification(str, enum.Enum):
     GENERAL: str = "GENERAL"
     MALWARE: str = "MALWARE"
 
-AriadneSecurityAdvisoryClassification = ariadne.EnumType(
-    "SecurityAdvisoryClassification",
-    SecurityAdvisoryClassification,
-)
 
-
+@strawberry.type
 class SecurityAdvisoryEcosystem(str, enum.Enum):
     """
     References:
@@ -44,6 +42,7 @@ class SecurityAdvisoryEcosystem(str, enum.Enum):
     RUST: str = "RUST"
 
 
+@strawberry.type
 class SecurityAdvisoryIdentifierType(str, enum.Enum):
     """
     References:
@@ -53,6 +52,7 @@ class SecurityAdvisoryIdentifierType(str, enum.Enum):
     GHSA: str = "GHSA"
 
 
+@strawberry.type
 class SecurityAdvisoryOrderField(str, enum.Enum):
     """
     References:
@@ -62,6 +62,7 @@ class SecurityAdvisoryOrderField(str, enum.Enum):
     UPDATED_AT: str = "UPDATED_AT"
 
 
+@strawberry.type
 class SecurityAdvisorySeverity(str, enum.Enum):
     """
     References:
@@ -73,6 +74,7 @@ class SecurityAdvisorySeverity(str, enum.Enum):
     LOW: str = "LOW"
 
 
+@strawberry.type
 class SecurityVulnerabilityOrderField(str, enum.Enum):
     """
     References:
@@ -81,6 +83,7 @@ class SecurityVulnerabilityOrderField(str, enum.Enum):
     UPDATED_AT: str = "UPDATED_AT"
 
 
+@strawberry.type
 class GitHubSecurityAdvisory(Node):
     classification: object = None
     cvss: object = None

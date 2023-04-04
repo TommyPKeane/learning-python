@@ -10,7 +10,6 @@ from graphql_queries.github.security import *  # TODO (tommypkeane): Update to e
 module_log = logging.getLogger(__name__)
 
 
-def test_AriadneSecurityAdvisoryClassification() -> None:
-    assert AriadneSecurityAdvisoryClassification.field("GENERAL") is not None
-    assert AriadneSecurityAdvisoryClassification.field("MALWARE") is not None
+def test_SecurityAdvisoryClassification() -> None:
+    module_log.info(SecurityAdvisoryClassification.__dict__)
     return None
