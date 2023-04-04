@@ -8,3 +8,9 @@ from graphql_queries.github.security import *  # TODO (tommypkeane): Update to e
 
 
 module_log = logging.getLogger(__name__)
+
+
+def test_AriadneSecurityAdvisoryClassification() -> None:
+    assert AriadneSecurityAdvisoryClassification.field("GENERAL") is not None
+    assert AriadneSecurityAdvisoryClassification.field("MALWARE") is not None
+    return None

@@ -7,8 +7,9 @@ References:
 import datetime
 import enum
 
-from graphql_queries.query import GraphQLQuery
+import ariadne
 from graphql_queries.github.node import Node
+from graphql_queries.query import GraphQLQuery
 
 
 class SecurityAdvisoryClassification(str, enum.Enum):
@@ -18,6 +19,11 @@ class SecurityAdvisoryClassification(str, enum.Enum):
     """
     GENERAL: str = "GENERAL"
     MALWARE: str = "MALWARE"
+
+AriadneSecurityAdvisoryClassification = ariadne.EnumType(
+    "SecurityAdvisoryClassification",
+    SecurityAdvisoryClassification,
+)
 
 
 class SecurityAdvisoryEcosystem(str, enum.Enum):
@@ -103,7 +109,7 @@ class QueryGitHubSecurityAdvisories(GraphQLQuery):
     """
     after: str = None
     before: str = None
-    classifications: list[SecurityAdvisoryClassification]: None
+    classifications: list[SecurityAdvisoryClassification] = None
     first: int = None
     identifier: str = None
     last: int = None
@@ -115,7 +121,7 @@ class QueryGitHubSecurityAdvisories(GraphQLQuery):
         self,
         after: str = None,
         before: str = None,
-        classifications: list: None,
+        classifications: list[SecurityAdvisoryClassification] = None,
         first: int = None,
         identifier: str = None,
         last: int = None,
