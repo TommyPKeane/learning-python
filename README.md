@@ -11,6 +11,8 @@ Currently in 2023, I'd say that Python is my preferred programming language and 
 - [Setup](#setup)
 - [What is Python?](#what-is-python)
 - [What's this "tommy teaches tommy" thing all about?](#whats-this-tommy-teaches-tommy-thing-all-about)
+- [Tips for Text Editor \(or IDE\) Setup](#tips-for-text-editor-or-ide-setup)
+	- [Sublime Text](#sublime-text)
 - [License](#license)
 - [References](#references)
 
@@ -46,6 +48,21 @@ _"What's in a name?"_
 You can see a rambly explanation [here at my personal website](https://tommypkeane.com/about-tommy/tommy-teaches-tommy.html); but, in short:
 
 I'm just trying to say that I'm writing out what I think is helpful/interesting to me, and I'm sharing it in case it's helpful to anyone else, but please know that I'm ___not___ trying to talk _down_ to anyone :smile: (except maybe myself :ghost:).
+
+<a id="tips-for-text-editor-or-ide-setup"></a>
+## Tips for Text Editor (or IDE) Setup
+
+<a id="sublime-text"></a>
+### Sublime Text
+
+`Python.sublime-settings` for Python syntax settings:
+
+```json
+{
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true
+}
+```
 
 <a id="license"></a>
 ## License
