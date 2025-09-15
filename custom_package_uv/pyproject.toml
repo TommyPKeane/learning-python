@@ -1,0 +1,34 @@
+[project]
+name = "my-custom-package"
+version = "0.1.0"
+description = "Example Custom Python Package managed with uv"
+readme = "README.md"
+requires-python = ">=3.13.6,<4.0.0"
+dependencies = [
+    "dash~=3.2.0",
+    "numpy~=2.3.2",
+    "plotly~=6.2.0",
+    "scikit-learn~=1.7.1",
+    "scipy~=1.16.1",
+]
+
+[tool.uv]
+environments = [
+    "implementation_name == 'cpython'",
+]
+
+[tool.uv.build-backend]
+module-name = "my_custom_package"
+module-root = "./"
+namespace = false
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.python.org/simple"
+default = true
+
+[build-system]
+requires = [
+	"uv_build<1.0.0"
+]
+build-backend = "uv_build"
