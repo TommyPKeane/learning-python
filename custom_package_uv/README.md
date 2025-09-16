@@ -81,6 +81,11 @@ uv tool upgrade ruff
 <a id="developer-setup"></a>
 ## Developer Setup
 
+> ***Last Tested with:***
+> - `uv 0.8.17 (Homebrew 2025-09-10)`
+> - `ruff 0.13.0`
+
+
 1. Make sure you have the Python Version installed:
     ```bash
     pyenv install
@@ -97,10 +102,14 @@ uv tool upgrade ruff
     ```bash
     pip install --upgrade pip
     ```
-1. Install the Python dependencies and setup the local Package with `uv`:
+1. Install the Python dependencies and setup the local Package with `uv` by relying on the already active `direnv` and `pyenv` local virtual environment:
     ```bash
-    uv install
+    uv sync --active
     ```
+
+`uv` recommends to use their built-in `venv` management for Virtual Environments, but with this example we're showing how to rely on `direnv` and `pyenv`, which can be a bit more featureful and stable as `uv` is still in active development.
+
+This also allows you to compare/contrast this setup and the processes with a similar setup using `poetry` also shown in this repository for `poetry` version `v1.8` and `poetry` version `v2.0`, as there are some nuanced differences between all three of these approaches.
 
 <a id="references"></a>
 ## References
