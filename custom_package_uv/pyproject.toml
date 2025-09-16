@@ -3,7 +3,16 @@ name = "my-custom-package"
 version = "0.1.0"
 description = "Example Custom Python Package managed with uv"
 readme = "README.md"
-requires-python = ">=3.13.6,<4.0.0"
+requires-python = ">=3.13.0,<4.0.0"
+authors = [
+    { name = "Tommy P. Keane", email = "talk.to.tommypkeane@gmail.com" },
+]
+maintainers = [
+    { name = "Tommy P. Keane", email = "talk.to.tommypkeane@gmail.com" },
+]
+license-files = [
+    "LICENSE",
+]
 dependencies = [
     "dash~=3.2.0",
     "numpy~=2.3.2",
