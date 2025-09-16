@@ -8,6 +8,7 @@ This folder is an example of creating and managing your own custom Python Packag
 - [Developer Setup](#developer-setup)
     - [Adding "main" Dependencies](#adding-main-dependencies)
     - [Adding "dev" Dependencies](#adding-dev-dependencies)
+    - [Formatting and Linting](#formatting-and-linting)
 - [References](#references)
 
 <!-- /MarkdownTOC -->
@@ -86,6 +87,14 @@ Adding the latest version of the `ruff` package for linting and formatting:
 ```bash
 poetry add --group dev ruff@latest
 ```
+
+<a id="formatting-and-linting"></a>
+### Formatting and Linting
+
+Typically you'll want to run these commands before every commit, and resolve any raised issues that cannot be fixed automatically:
+
+- `ruff format ./`
+- `ruff check --fix ./`
 
 <a id="references"></a>
 ## References
