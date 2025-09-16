@@ -13,6 +13,7 @@
 **/__pycache__/
 
 # ruff
+**/.ruff_cache/
 
 # pytest
 **/__pytest_cache__/
