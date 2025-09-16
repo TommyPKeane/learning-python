@@ -1,4 +1,5 @@
-# PyTest Configuration | Main File
-#
-# References:
-#   - ...
+"""PyTest Configuration | Top-level Directory
+
+References:
+    - ...
+"""

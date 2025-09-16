@@ -1,4 +1,5 @@
-# PyTest Configuration | tests Directory
-#
-# References:
-#   - ...
+"""PyTest Configuration | tests Directory
+
+References:
+    - ...
+"""

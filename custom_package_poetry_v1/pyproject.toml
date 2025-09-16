@@ -1,29 +1,42 @@
 [project]
+# Not used
+
+[tool.poetry]
 name = "my-custom-package"
 version = "0.1.0"
+description = "Example Custom Python Package managed with poetry v1.8.z"
+readme = "README.md"
 authors = [
     "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
 ]
-description = "Example Custom Python Package managed with poetry v1.8.z"
-readme = "README.md"
+maintainers = [
+    "Tommy P. Keane <talk.to.tommypkeane@gmail.com>",
+]
+homepage = "https://www.tommypkeane.com"
+repository = "https://github.com/TommyPKeane/learning-python"
 packages = [
-    {include = "my_custom_package"},
+    { include = "my_custom_package" },
 ]
 
-[tool.poetry]
-name = "poetry-demo"
-version = "0.1.0"
-description = ""
-authors = ["Sébastien Eustace <sebastien@eustace.io>"]
-readme = "README.md"
-
 [tool.poetry.dependencies]
-python = "^3.13.7"
+python = ">=3.13.0,<4.0.0"
 dash = "^3.2.0"
-numpy = "^2.3.2"
-plotly = "^6.2.0"
-scikit-learn = "^1.7.1"
-scipy = "^1.16.1"
+numpy = "^2.3.3"
+plotly = "^6.3.0"
+scikit-learn = "^1.7.2"
+scipy = "^1.16.2"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.13.0"
+pytest = "^8.4.2"
+pytest-cov = "^7.0.0"
+hypothesis = "^6.138.17"
+pytest-mock = "^3.15.0"
+
+[[tool.poetry.source]]
+name = "PyPI"
+# url = "https://pypi.python.org/simple"  # Name is specially recognized as PyPI default
+priority = "primary"
 
 [build-system]
 requires = [
