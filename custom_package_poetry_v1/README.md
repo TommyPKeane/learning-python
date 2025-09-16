@@ -6,6 +6,8 @@ This folder is an example of creating and managing your own custom Python Packag
 
 - [Environment Setup and Install](#environment-setup-and-install)
 - [Developer Setup](#developer-setup)
+    - [Adding "main" Dependencies](#adding-main-dependencies)
+    - [Adding "dev" Dependencies](#adding-dev-dependencies)
 - [References](#references)
 
 <!-- /MarkdownTOC -->
@@ -56,13 +58,38 @@ And if you want a full compilation/install for Python, you'd likely also want to
     ```bash
     pip install --upgrade pip
     ```
-1. Install the Python dependencies and setup the local Package with `poetry`:
+1. Locally install the `poetry` dependency/package manager so you can then install the dependencies:
     ```bash
     pip install "poetry<2"
     ```
+1. Install the Python dependencies from the `poetry.lock` file after checking consistency against the `pyproject.toml` file:
+    ```bash
+    poetry install
+    ```
+
+Now you should have all the dependencies installed and the package itself (`my-custom-package`; `import my_custom_package`) will be installed locally in "editable" mode, so you can create local scripting in the `examples/` directory.
+
+<a id="adding-main-dependencies"></a>
+### Adding "main" Dependencies
+
+Adding the latest version of the `numpy` package for numeric calculations:
+
+```bash
+poetry add numpy@latest
+```
+
+<a id="adding-dev-dependencies"></a>
+### Adding "dev" Dependencies
+
+Adding the latest version of the `ruff` package for linting and formatting:
+
+```bash
+poetry add --group dev ruff@latest
+```
 
 <a id="references"></a>
 ## References
 
 - https://python-poetry.org/docs/1.8/
 - https://docs.astral.sh/ruff/
+- https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
