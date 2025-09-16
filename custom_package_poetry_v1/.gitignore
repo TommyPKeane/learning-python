@@ -1,0 +1,18 @@
+# macOS
+**/.DS_Store
+
+# direnv
+**/.direnv/
+
+# venv
+**/.venv/
+
+# Python
+*.pyc
+*.pyo
+**/__pycache__/
+
+# ruff
+
+# pytest
+**/__pytest_cache__/
