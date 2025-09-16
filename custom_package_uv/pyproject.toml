@@ -32,3 +32,75 @@ requires = [
 	"uv_build<1.0.0"
 ]
 build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+docstring-code-line-length = 40
+
+[tool.ruff.lint]
+select = [
+    "YTT",  # https://docs.astral.sh/ruff/rules/#flake8-2020-ytt
+    "ANN",  # https://docs.astral.sh/ruff/rules/#flake8-annotations-ann
+    "ASYNC",  # https://docs.astral.sh/ruff/rules/#flake8-async-async
+    "S",  # https://docs.astral.sh/ruff/rules/#flake8-bandit-s
+    "BLE",  # https://docs.astral.sh/ruff/rules/#flake8-blind-except-ble
+    "FBT",  # https://docs.astral.sh/ruff/rules/#flake8-boolean-trap-fbt
+    "B",  # https://docs.astral.sh/ruff/rules/#flake8-bugbear-b
+    "A",  # https://docs.astral.sh/ruff/rules/#flake8-builtins-a
+    "C4",  # https://docs.astral.sh/ruff/rules/#flake8-comprehensions-c4
+    "DTZ",  # https://docs.astral.sh/ruff/rules/#flake8-datetimez-dtz
+    "T10",  # https://docs.astral.sh/ruff/rules/#flake8-debugger-t10
+    "EM",  # https://docs.astral.sh/ruff/rules/#flake8-errmsg-em
+    "INT",  # https://docs.astral.sh/ruff/rules/#flake8-gettext-int
+    "ISC",  # https://docs.astral.sh/ruff/rules/#flake8-implicit-str-concat-isc
+    "ICN",  # https://docs.astral.sh/ruff/rules/#flake8-import-conventions-icn
+]
+ignore = [
+    "W191",
+    "E111",
+    "E114",
+    "E117",
+    "D206",
+    "D300",
+    "Q000",
+    "Q001",
+    "Q002",
+    "Q003",
+    "COM812",
+    "COM819",
+    "ISC002",
+    "ANN002",
+    "ANN003",
+]
+
+[tool.ruff.lint.flake8-import-conventions]
+banned-from = [
+    "logging",
+    "math",
+    "typing",
+]
+
+[tool.ruff.lint.flake8-import-conventions.aliases]
+# None
+
+[tool.ruff.lint.flake8-import-conventions.banned-aliases]
+"altair" = ["alt"]
+"holoviews" = ["hv"]
+"matplotlib" = ["mpl"]
+"matplotlib.pyplot" = ["plt"]
+"numpy" = ["np"]
+"numpy.typing" = ["npt"]
+"pandas" = ["pd"]
+"panel" = ["pn"]
+"plotly.express" = ["px"]
+"polars" = ["pl"]
+"pyarrow" = ["pa"]
+"seaborn" = ["sns"]
+"tensorflow" = ["tf"]
+"tkinter" = ["tk"]
+"xml.etree.ElementTree" = ["ET"]
